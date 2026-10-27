@@ -1,0 +1,325 @@
+
+.room-page {
+    min-height: 100vh;
+    background: #0b0b12;
+    color: #f5f3ff;
+}
+
+.room-header {
+    height: 68px;
+    padding: 0 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-bottom: 1px solid #292738;
+    background: #101019;
+}
+
+.room-logo {
+    border: none;
+    background: transparent;
+    color: #f5f3ff;
+    font-size: 19px;
+    font-weight: 750;
+    cursor: pointer;
+}
+
+.room-logo span {
+    margin-right: 9px;
+    color: #a78bfa;
+}
+
+.room-info {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #b9b6ca;
+    font-size: 13px;
+}
+
+.room-status-dot {
+    width: 7px;
+    height: 7px;
+    display: inline-block;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #4ade80;
+}
+
+.leave-button {
+    padding: 10px 14px;
+    border: 1px solid #393447;
+    border-radius: 8px;
+    background: #191622;
+    color: #e9e5f5;
+    cursor: pointer;
+}
+
+.leave-button:hover {
+    background: #292238;
+}
+
+.room-layout {
+    min-height: calc(100vh - 68px);
+    display: grid;
+    grid-template-columns: 260px minmax(0, 1fr);
+}
+
+.room-sidebar {
+    position: relative;
+    padding: 27px 20px;
+    border-right: 1px solid #292738;
+    background: #101019;
+}
+
+.sidebar-label {
+    color: #a78bfa;
+    font-size: 10px;
+    font-weight: 750;
+    letter-spacing: 1.3px;
+}
+
+.room-sidebar h2 {
+    margin: 15px 0 25px;
+    font-size: 20px;
+}
+
+.room-detail-card {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    border: 1px solid #302b42;
+    border-radius: 10px;
+    background: #171622;
+}
+
+.room-detail-card > span {
+    color: #9995ad;
+    font-size: 10px;
+}
+
+.room-detail-card strong {
+    overflow-wrap: anywhere;
+    font-size: 17px;
+}
+
+.room-detail-card button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #463566;
+    border-radius: 7px;
+    background: #29213d;
+    color: #d9caff;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.participants-section {
+    margin-top: 34px;
+}
+
+.participant {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 18px;
+    font-size: 12px;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    background: #382957;
+    color: #e4d5ff;
+    font-weight: 750;
+}
+
+.online-label {
+    margin-left: auto;
+    color: #4ade80;
+    font-size: 10px;
+}
+
+.participant-note {
+    color: #858196;
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+.sidebar-bottom {
+    position: absolute;
+    right: 20px;
+    bottom: 24px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #a8a5b8;
+    font-size: 11px;
+}
+
+.editor-section {
+    min-width: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.editor-toolbar {
+    min-height: 48px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    border: 1px solid #292738;
+    border-radius: 9px;
+    background: #14131d;
+    color: #d6d3e3;
+    font-size: 12px;
+}
+
+.file-icon {
+    margin-right: 10px;
+    color: #a78bfa;
+}
+
+.editor-toolbar select {
+    padding: 8px 10px;
+    border: 1px solid #393447;
+    border-radius: 6px;
+    background: #201d2b;
+    color: #eeeaf9;
+    outline: none;
+}
+
+.monaco-container {
+    height: 430px;
+    min-height: 300px;
+    overflow: hidden;
+    border: 1px solid #302b42;
+    border-radius: 9px;
+    background: #1e1e1e;
+}
+
+.editor-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.editor-hint {
+    color: #858196;
+    font-size: 11px;
+}
+
+.run-button {
+    padding: 11px 18px;
+    border: 1px solid #a78bfa;
+    border-radius: 8px;
+    background: #8b5cf6;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.run-button:hover {
+    background: #7c3aed;
+}
+
+.output-section {
+    min-height: 145px;
+    overflow: hidden;
+    border: 1px solid #292738;
+    border-radius: 9px;
+    background: #101019;
+}
+
+.output-header {
+    padding: 13px 15px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #292738;
+    color: #a7a3ba;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+}
+
+.output-header button {
+    border: none;
+    background: transparent;
+    color: #b9b4cb;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.output-content {
+    margin: 0;
+    padding: 16px;
+    color: #b9b6ca;
+    font-family: Consolas, monospace;
+    font-size: 12px;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 750px) {
+    .room-header {
+        padding: 0 14px;
+    }
+
+    .room-info {
+        font-size: 10px;
+    }
+
+    .room-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .room-sidebar {
+        padding: 18px;
+        border-right: none;
+        border-bottom: 1px solid #292738;
+    }
+
+    .room-sidebar h2 {
+        margin-bottom: 15px;
+    }
+
+    .room-detail-card {
+        max-width: 360px;
+    }
+
+    .participants-section {
+        margin-top: 20px;
+    }
+
+    .sidebar-bottom {
+        position: static;
+        margin-top: 20px;
+    }
+
+    .editor-section {
+        padding: 12px;
+    }
+
+    .monaco-container {
+        height: 380px;
+    }
+
+    .editor-hint {
+        max-width: 55%;
+        line-height: 1.5;
+    }
+}
+
